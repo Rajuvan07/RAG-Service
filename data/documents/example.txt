@@ -1,0 +1,14 @@
+Simple RAG Service Demo
+
+Retrieval-Augmented Generation (RAG) combines document retrieval with a language model.
+The application first splits documents into smaller chunks and converts each chunk into an embedding.
+Embeddings are stored in a vector database. When a user asks a question, the question is embedded,
+similar chunks are retrieved, and the language model answers using those chunks as context.
+
+Minimum components:
+1. Document loader and chunker
+2. Embedding model
+3. Vector store
+4. Retriever
+5. Language model
+6. API endpoint
